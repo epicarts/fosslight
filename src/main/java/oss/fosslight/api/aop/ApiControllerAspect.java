@@ -32,8 +32,8 @@ import oss.fosslight.config.AppConstBean;
 @Component
 @Slf4j
 public class ApiControllerAspect {
-	
-	private final String convertParamJson = CoConstDef.FLAG_YES;
+
+	pprivate final String convertParamJson = CoConstDef.FLAG_YES;
 	
 	@Around("execution(* "+ AppConstBean.APP_COMPONENT_SCAN_PACKAGE
 			+ ".api.controller..*.*(..)) && @annotation(org.springframework.web.bind.annotation.GetMapping)")
