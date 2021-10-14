@@ -274,7 +274,7 @@
 
 				switch (licenseChoiceLength) {
 					case 0:
-						alertify.alert("No licenses entered.", function(){});
+						alertify.alert('<spring:message code="msg.oss.required.license" />', function(){});
 						return false;
 						break;
 					case 1:
@@ -436,7 +436,7 @@
 					var value = $(cur).val();
 
 					if(value.charAt(value.length-1) == "/"){
-						value = value.slice(0, -1); // 마지막 문자열 제거
+						value = value.slice(0, -1); // delete last string
 						$(cur).val(value);
 					}
 				});
@@ -479,7 +479,7 @@
 				var seq = $(target).attr("id").replace(/[^\d]+/g, "");
 				
 				if(value.charAt(value.length-1) == "/"){
-					value = value.slice(0, -1); // 마지막 문자열 제거
+					value = value.slice(0, -1); // delete last string
 					$(target).val(value);
 				}
 				
@@ -511,7 +511,7 @@
         		});
         		
         		if(result.length > 0){
-        			alertify.alert("License must be filled in using autocomplete.", function(){});
+        			alertify.alert('<spring:message code="msg.oss.required.auto" />', function(){});
         			return false;
         		}
         		
@@ -584,7 +584,7 @@
 
         						var colName = $("#"+gridStr+" #"+rowId).parents("table").attr("id")+"_"+seqSuffix[0];
 
-        						// 그리드 메세지 그리기
+        						// drawing grid message
         						$("#"+gridStr+" #"+rowId+" td[aria-describedby=\""+colName+"\"]")
         						.append('<div class=\"'+gridStr+"_"+rowId+' retxt"\">'+ value +'</div>');						
         					}
@@ -604,7 +604,7 @@
         					}
         				}
         				
-        				// 라셀 초기화
+        				// lastsel initialization.
         				lastsel = -1;
         			}
         		});
@@ -633,9 +633,9 @@
 				        			    opener.$('#ossList').jqGrid('setCell', gridId, 'result', "Success");
 				        			    opener.$("#"+gridId).addClass("excludeRow");
 				        			    opener.$("#"+gridId + " > td > [type='checkbox']").attr({"disabled": true, "checked": false});
-				        			}); // 동일한 group Id의 row를 전부 제거함.
+				        			}); // Remove all rows of the same group ID.
 				        			
-									self.opener = null;self.close(); // 저장이 완료된 상태라면 현재 popup을 닫음.
+									self.opener = null;self.close(); // If the save is complete, the pop-up is currently closed.
 								}
 							});
 						}
