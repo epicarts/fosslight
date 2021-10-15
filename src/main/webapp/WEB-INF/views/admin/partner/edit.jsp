@@ -390,8 +390,8 @@
 										<table id="_binaryFileList"><tr><td></td></tr></table>
 									</div>
 								</div>
-								<div>Binary analysis results are used only as reference data. Until the accuracy of the tool is improved, it is not included in the BOM and OSS Notice</div>
-								<div>※ Uploaded firmware is only kept for one month.</div>
+								<div><spring:message code="msg.partner.notice"/></div>
+								<div>※<spring:message code="msg.partner.notice.term"/></div>
 							</div>
 						</form>
 					</fieldset>
