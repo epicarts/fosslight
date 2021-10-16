@@ -1120,7 +1120,7 @@ var binAndroid_fn = {
     	var ValidCnt = Object.keys(binAndroidValidMsgData).reduce(binAndroid_fn.checkErrorData, []).length;
 
 		if(ValidCnt > 0){
-			alertify.alert("You can download NOTICE only if there is no warning message in OSS Name, OSS Version, License or Binary Name is not null.", function(){});
+			alertify.alert("<spring:message code='msg.project.download.notice'>", function(){});
 
 			return false;	
 		}
@@ -1128,7 +1128,7 @@ var binAndroid_fn = {
     	var DiffCnt = Object.keys(binAndroidDiffMsgData).reduce(binAndroid_fn.checkErrorData, []).length;
 
         if(DiffCnt > 0){
-        	alertify.alert("You can download NOTICE only if there is no warning message in OSS Name, OSS Version, License or Binary Name is not null.", function(){});
+        	alertify.alert("<spring:message code='msg.project.download.notice' />", function(){});
 
 			return false;
         }
@@ -1136,7 +1136,7 @@ var binAndroid_fn = {
         var notExcludeRow = $("#binAndroidList").getRowData().filter(function(a){ return a.excludeYn == "N"; }).length;
 
         if(notExcludeRow == 0){ // excludeYn이 N인 대상이 0 건일 경우(전체 Data가 excludeYn:Y 이거나 binAndroid의 Data가 0건 인 경우)
-        	alertify.alert("There is no binary that meets the conditions for creating NOTICE.", function(){});
+        	alertify.alert("<spring:message code='msg.project.no.binary' />", function(){});
 
 			return false;
         }
@@ -1150,7 +1150,7 @@ var binAndroid_fn = {
         }, []).length;
 
         if(noticeCheckRow == 0){ //  "NOTICE Should be "ok" in case OSS is used" 인 대상이 0건 일 경우
-        	alertify.alert("There is no binary that meets the conditions for creating NOTICE.", function(){});
+            alertify.alert("<spring:message code='msg.project.no.binary' />", function(){});
 
 			return false;
         }

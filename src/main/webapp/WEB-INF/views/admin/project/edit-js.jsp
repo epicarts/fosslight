@@ -305,7 +305,7 @@
 
 				if(adId == "") {
 					$("#adId").focus();
-					return alertify.error('Please enter watcher AD ID', 0);
+					return alertify.error('<spring:message code="enter.watcher.error" />', 0);
 				}
 				
 				var _email = adId + "@" + domain;
