@@ -1625,7 +1625,7 @@
 										</td>
 									</tr>
 									<tr>
-										<th class="dCase txStr">OSS Name</th>
+										<th class="dCase txStr"><spring:message code="msg.common.field.OSS.name" /></th>
 										<td class="dCase">
 											<div class="required">
 												<input name="ossName" type="text" class="autoComOss w100P" id="detailOssName1" />
@@ -1634,7 +1634,7 @@
 										</td>
 									</tr>
 									<tr>
-										<th class="dCase">OSS Version</th>
+										<th class="dCase"><spring:message code="msg.common.field.OSS.version" /></th>
 										<td class="dCase">
 											<div class="required">	
 												<input name="ossVersion" type="text" class="w100P" id="detailOssVersion1" />
@@ -1643,7 +1643,7 @@
 										</td>
 									</tr>
 									<tr>
-										<th class="dCase">Nick Name</th>
+										<th class="dCase"><spring:message code="msg.common.field.nickname" /></th>
 										<td class="dCase">
 											<div class="multiTxtSet detailNickName1">
 												<div class="required">
@@ -1655,7 +1655,7 @@
 										</td>
 									</tr>
 									<tr>
-										<th class="dCase txStr">Declared License</th>
+										<th class="dCase txStr"><spring:message code="msg.common.field.declaredLicense" /></th>
 										<td class="dCase">
 											<div class="required detailLicense1">
 												<div class="licenseMulti">
@@ -1668,7 +1668,7 @@
 										</td>
 									</tr>
 									<tr>
-										<th class="dCase">Detected License</th>
+										<th class="dCase"><spring:message code="msg.common.field.detectedLicense" /></th>
 										<td class="dCase">
 											<div class="multiItemSet multiDetectedLicenseSet detailDetectedLicense1">
 												<div class="required">
@@ -1680,17 +1680,17 @@
 										</td>
 									</tr>
 									<tr>
-										<th class="dCase">Copyright</th>
+										<th class="dCase"><spring:message code="msg.common.field.Copyright" /></th>
 										<td class="dCase">
 											<textarea name="copyright" class="w100P h150" id="detailCopyright1"></textarea>
 										</td>
 									</tr>
 									<tr id="lt1">
-										<th class="dCase">License Type</th>
+										<th class="dCase"><spring:message code="msg.common.field.licenseType" /></th>
 										<td class="dCase"></td>
 									</tr>
 									<tr id="ob1">
-										<th class="dCase">Obligation</th>
+										<th class="dCase"><spring:message code="msg.common.field.obligation" /></th>
 										<td class="dCase"></td>
 									</tr>
 									<tr>
@@ -1706,7 +1706,7 @@
 										</td>
 									</tr>
 									<tr>
-										<th class="dCase">Home Page</th>
+										<th class="dCase"><spring:message code="msg.common.field.homepage" /></th>
 										<td class="dCase">
 											<div class="required">
 												<input name="homepage" type="text" class="w100P" placeholder="http://"  id="detailHomePage1"/>
@@ -1719,7 +1719,7 @@
 										<td class="dCase"><textarea name="summaryDescription" class="w100P h150"  id="detailSummaryDescription1"></textarea></td>
 									</tr>
 									<tr>
-										<th class="dCase">Comment</th>
+										<th class="dCase"><spring:message code="msg.common.field.comment" /></th>
 										<td class="dCase">
 											<textarea name="comment" class="w100P h150"  id="detailcomment1"></textarea>
 										</td>
@@ -1763,7 +1763,7 @@
 										</td>
 									</tr>
 									<tr>
-										<th class="dCase txStr">OSS Name</th>
+										<th class="dCase txStr"><spring:message code="msg.common.field.OSS.name" /></th>
 										<td class="dCase">
 											<div class="required">
 												<input name="ossName" type="text" class="autoComOss w100P" id="detailOssName2" />
@@ -1772,7 +1772,7 @@
 										</td>
 									</tr>
 									<tr>
-										<th class="dCase">OSS Version</th>
+										<th class="dCase"><spring:message code="msg.common.field.OSS.version" /></th>
 										<td class="dCase">
 											<div class="required">	
 												<input name="ossVersion" type="text" class="w100P" id="detailOssVersion2" />
@@ -1782,7 +1782,7 @@
 									</tr>
 									<tr>
 										<tr>
-										<th class="dCase">Nick Name</th>
+										<th class="dCase"><spring:message code="msg.common.field.nickname" /></th>
 										<td class="dCase">
 											<div class="multiTxtSet detailNickName2">
 												<div class="required">
@@ -1794,7 +1794,7 @@
 										</td>
 									</tr>
 									<tr>
-										<th class="dCase txStr">Declared License</th>
+										<th class="dCase txStr"><spring:message code="msg.common.field.declaredLicense" /></th>
 										<td class="dCase">
 											<div class="required detailLicense2">
 												<div class="licenseMulti">
@@ -1807,7 +1807,7 @@
 										</td>
 									</tr>
 									<tr>
-										<th class="dCase">Detected License</th>
+										<th class="dCase"><spring:message code="msg.common.field.detectedLicense" /></th>
 										<td class="dCase">
 											<div class="multiItemSet multiDetectedLicenseSet detailDetectedLicense2">
 												<div class="required">
@@ -1819,17 +1819,17 @@
 										</td>
 									</tr>
 									<tr>
-										<th class="dCase">Copyright</th>
+										<th class="dCase"><spring:message code="msg.common.field.Copyright" /></th>
 										<td class="dCase">
 											<textarea name="copyright" class="w100P h150" id="detailCopyright2"></textarea>
 										</td>
 									</tr>
 									<tr id="lt2">
-										<th class="dCase">License Type</th>
+										<th class="dCase"><spring:message code="msg.common.field.licenseType" /></th>
 										<td class="dCase"></td>
 									</tr>
 									<tr id="ob2">
-										<th class="dCase">Obligation</th>
+										<th class="dCase"><spring:message code="msg.common.field.obligation" /></th>
 										<td class="dCase"></td>
 									</tr>
 									<tr>
@@ -1845,7 +1845,7 @@
 										</td>
 									</tr>
 									<tr>
-										<th class="dCase">Home Page</th>
+										<th class="dCase"><spring:message code="msg.common.field.homepage" /></th>
 										<td class="dCase">
 											<div class="required">
 												<input name="homepage" type="text" class="w100P" placeholder="http://"  id="detailHomePage2"/>
@@ -1858,7 +1858,7 @@
 										<td class="dCase"><textarea name="summaryDescription" class="w100P h150"  id="detailSummaryDescription2"></textarea></td>
 									</tr>
 									<tr>
-										<th class="dCase">Comment</th>
+										<th class="dCase"><spring:message code="msg.common.field.comment" /></th>
 										<td class="dCase">
 											<textarea name="comment" class="w100P h150"  id="detailcomment2"></textarea>
 										</td>
@@ -1902,7 +1902,7 @@
 										</td>
 									</tr>
 									<tr>
-										<th class="dCase txStr">OSS Name</th>
+										<th class="dCase txStr"><spring:message code="msg.common.field.OSS.name" /></th>
 										<td class="dCase">
 											<div class="required">
 												<input name="ossName" type="text" class="autoComOss w100P" id="detailOssName3" />
@@ -1911,7 +1911,7 @@
 										</td>
 									</tr>
 									<tr>
-										<th class="dCase">OSS Version</th>
+										<th class="dCase"><spring:message code="msg.common.field.OSS.version" /></th>
 										<td class="dCase">
 											<div class="required">	
 												<input name="ossVersion" type="text" class="w100P" id="detailOssVersion3" />
@@ -1921,7 +1921,7 @@
 									</tr>
 									<tr>
 										<tr>
-										<th class="dCase">Nick Name</th>
+										<th class="dCase"><spring:message code="msg.common.field.nickname" /></th>
 										<td class="dCase">
 											<div class="multiTxtSet detailNickName3">
 												<div class="required">
@@ -1933,7 +1933,7 @@
 										</td>
 									</tr>
 									<tr>
-										<th class="dCase txStr">Declared License</th>
+										<th class="dCase txStr"><spring:message code="msg.common.field.declaredLicense" /></th>
 										<td class="dCase">
 											<div class="required detailLicense3">
 												<div class="licenseMulti">
@@ -1946,7 +1946,7 @@
 										</td>
 									</tr>
 									<tr>
-										<th class="dCase">Detected License</th>
+										<th class="dCase"><spring:message code="msg.common.field.detectedLicense" /></th>
 										<td class="dCase">
 											<div class="multiItemSet multiDetectedLicenseSet detailDetectedLicense3">
 												<div class="required">
@@ -1958,17 +1958,17 @@
 										</td>
 									</tr>
 									<tr>
-										<th class="dCase">Copyright</th>
+										<th class="dCase"><spring:message code="msg.common.field.Copyright" /></th>
 										<td class="dCase">
 											<textarea name="copyright" class="w100P h150" id="detailCopyright3"></textarea>
 										</td>
 									</tr>
 									<tr id="lt3">
-										<th class="dCase">License Type</th>
+										<th class="dCase"><spring:message code="msg.common.field.licenseType" /></th>
 										<td class="dCase"></td>
 									</tr>
 									<tr id="ob3">
-										<th class="dCase">Obligation</th>
+										<th class="dCase"><spring:message code="msg.common.field.obligation" /></th>
 										<td class="dCase"></td>
 									</tr>
 									<tr>
@@ -1984,7 +1984,7 @@
 										</td>
 									</tr>
 									<tr>
-										<th class="dCase">Home Page</th>
+										<th class="dCase"><spring:message code="msg.common.field.homepage" /></th>
 										<td class="dCase">
 											<div class="required">
 												<input name="homepage" type="text" class="w100P" placeholder="http://"  id="detailHomePage3"/>
@@ -1997,7 +1997,7 @@
 										<td class="dCase"><textarea name="summaryDescription" class="w100P h150"  id="detailSummaryDescription3"></textarea></td>
 									</tr>
 									<tr>
-										<th class="dCase">Comment</th>
+										<th class="dCase"><spring:message code="msg.common.field.comment" /></th>
 										<td class="dCase">
 											<textarea name="comment" class="w100P h150"  id="detailcomment3"></textarea>
 										</td>
