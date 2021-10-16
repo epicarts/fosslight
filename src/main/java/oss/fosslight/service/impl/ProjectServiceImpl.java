@@ -1279,10 +1279,15 @@ public class ProjectServiceImpl extends CoTopComponent implements ProjectService
 			project.setPublicYn(avoidNull(project.getPublicYn(), CoConstDef.FLAG_YES));
 			
 			// if complete value equals 'Y', set
-			if("Y".equals(projectMapper.selectProjectMaster(project).getCompleteYn())) {
-				project.setCompleteYn(CoConstDef.FLAG_YES);
+			if(!isNew) {
+				Project prjBean = projectMapper.selectProjectMaster(project);
+				
+				if(prjBean != null) {
+					if(CoConstDef.FLAG_YES.equals(prjBean.getCompleteYn())) {
+						project.setCompleteYn(CoConstDef.FLAG_YES);
+					}
+				}
 			}
-			
 			// project master
 			projectMapper.insertProjectMaster(project);
 			
@@ -2562,6 +2567,12 @@ public class ProjectServiceImpl extends CoTopComponent implements ProjectService
 					}
 				}
 			}
+			
+			// StatisticsMostUsed > OssInfo INSERT
+			projectMapper.insertStatisticsMostUsedOssInfo(project);
+			
+			// StatisticsMostUsed > LicenseInfo INSERT
+			projectMapper.insertStatisticsMostUsedLicenseInfo(project);
 		}
 	}
 
@@ -4043,7 +4054,6 @@ public class ProjectServiceImpl extends CoTopComponent implements ProjectService
 		return resultData;
 	}
 	
-	// 20210715_BOM COMPARE FUNC MOVE (LgeProjectService > ProjectService) >>>
 	@SuppressWarnings("unchecked")
 	@Override
 	public List<Map<String, String>> getBomCompare(List<ProjectIdentification> beforeBomList, List<ProjectIdentification> afterBomList, String flag)
@@ -4360,5 +4370,9 @@ public class ProjectServiceImpl extends CoTopComponent implements ProjectService
 			}
 		}
 	}
-	// 20210715_BOM COMPARE FUNC MOVE (LgeProjectService > ProjectService) <<<
+
+	@Override
+	public void deleteStatisticsMostUsedInfo(Project project) {
+		projectMapper.deleteStatisticsMostUsedInfo(project);
+	}
 }
