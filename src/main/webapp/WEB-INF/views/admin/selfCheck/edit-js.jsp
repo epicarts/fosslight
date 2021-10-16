@@ -225,7 +225,7 @@
 			
 			if(!regExp.test(date)){
 				$this.val("");
-				alert("날짜 입력 형식이 틀립니다. 예:2016.01.01");
+				alert('<spring:message code="msg.project.confirm.wrong.input.date" />');
 			}
 		}
 	}
