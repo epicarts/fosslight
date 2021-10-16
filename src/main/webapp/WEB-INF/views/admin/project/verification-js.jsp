@@ -127,7 +127,7 @@
 		// 20210617_autoVerify Change Alert ADD
 		$("input:checkbox[name='autoVerify']").change(function(){
 			if($("input:checkbox[name='autoVerify']").is(":checked") == true){
-				alertify.alert('Verify when file is uploaded', function(){});
+				alertify.alert("<spring:message code='msg.project.upload.verify' />", function(){});
 			}
 		});
 	});

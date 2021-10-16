@@ -90,7 +90,7 @@
 			// 저장
 			$("#save").click(function(){
 				if(needVerifyFlag){
-					alertify.alert('Please verify the new package file', function(){});
+					alertify.alert('<spring:message code="msg.project.need.verify" />', function(){});
 					return false;
 				}
 				
