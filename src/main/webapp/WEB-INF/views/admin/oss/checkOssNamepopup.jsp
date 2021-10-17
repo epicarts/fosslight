@@ -241,7 +241,7 @@
 																
 										if(result.length == idArryOnlyInOssList.length){
 											if(!failFlag){
-												alertify.success('Successfully add NickName except for oss not registered in oss list');
+												alertify.success('<spring:message code="msg.selfcheck.nickname.success" />');
 												opener.location.reload();
 											}
 											

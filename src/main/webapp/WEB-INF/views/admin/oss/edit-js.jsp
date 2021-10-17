@@ -337,7 +337,7 @@
 					return false;
 				}
 				
-				alertify.confirm('<spring:message code="msg.oss.remove.warn" />', function (e) {
+				alertify.confirm('<spring:message code="msg.oss.warn.remove" />', function (e) {
 					if (e) {
 						$('input[name=comment]').val(editorVal);
 						
@@ -507,7 +507,7 @@
 						success : function(data){
 							var length = data.ossList.length;
 							if (length == 1) {
-								alertify.alert('<spring:message code="msg.oss.required.need" />', function(){});
+								alertify.alert('<spring:message code="msg.oss.required.version" />', function(){});
 							} else if (length > 1) {
 								$.ajax({
 									url : '<c:url value="/oss/checkExistsOssByname"/>',
@@ -1012,7 +1012,7 @@
 				onSelectRow: function(id){
 	 				var rowData = $('#_ossSelectList').jqGrid('getRowData',id);
 	 				if(rowData.ossId == '${ossId}'){
-	 					alertify.alert("Can not choose myself.", function(){});
+	 					alertify.alert('<spring:message code="msg.oss.cannot.select" />', function(){});
 					}
 				}
 			});			

@@ -779,7 +779,7 @@
 			<c:if test="${ct:isAdmin() and not empty project.prjId and 'Y' ne project.copyFlag}">
 				var creator = $("input[name=creator]").val();
 				if(creator == ""){
-					alertify.alert("Creator의 autoComplete을 해 주시기 바랍니다.", function(){});
+					alertify.alert('<spring:message code="msg.project.required.autocomplete" />', function(){});
 					
 					return false;
 				}
@@ -1259,7 +1259,7 @@
 							}
 
 							if(CKEDITOR.instances['editor4'].getData() == ""){
-								alertify.alert('Please enter a reason for reject ok.', function(){});
+								alertify.alert('<spring:message code="msg.project.required.comments.reject.ok" />', function(){});
 
 								return false;
 							}
@@ -1448,7 +1448,7 @@
 			},
 			CheckChar : function(){
 				if(event.keyCode == 64){//@ 특수문자 체크
-            		alertify.alert("\'@\' Special characters are not allowed!", function(){});
+            		alertify.alert('<spring:message code="msg.login.check.char" />', function(){});
             		
             		event.returnValue = false;
             	}

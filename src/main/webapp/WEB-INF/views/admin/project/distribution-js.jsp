@@ -485,7 +485,7 @@
 				}
 				
 				if(!isDistribute){
-					alertify.error("no authorization.", 0);
+					alertify.error('<spring:message code="msg.project.required.authorization" />', 0);
 					
 					return;
 				}
@@ -1591,8 +1591,8 @@
 				
 				needVerifyFlag = false;
 				
-				alertify.alert('Successfully completed.', function(){});
-				alertify.success('Successfully verified the new package file');
+				alertify.alert('<spring:message code="msg.common.success" />', function(){});
+				alertify.success('<spring:message code="msg.project.verification.success" />');
 				
 				$("#verifyYn").val("Y");
 
@@ -1615,7 +1615,7 @@
 							$("#btnVerify").val("Completed").attr("disabled", true).removeClass("red");
 							needVerifyFlag = false;
 							alertify.alert(json.resMsg, function(){});
-							alertify.success('Successfully verified the new package file');
+							alertify.success('<spring:message code="msg.project.verification.success" />');
 							
 							$("#verifyYn").val("Y");
 						} else { // verify의 실패

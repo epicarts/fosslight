@@ -187,7 +187,7 @@ var sampleFile =  ${ct:getAllValuesJson(ct:getConstDef('CD_SAMPLE_FILE'))};
 							$('.confirmationUpload').append(' <span><input type="button" value="Delete" class="smallDelete" onclick="fn.deleteConfirmationFile(this)" style="vertical-align:super;"/></span>');
 							$('.confirmationUpload').append('<input type="hidden" name="confirmationFileId" value="'+result.registSeq+'"/>');
 						} else {
-							alert('파일 업로드에 실패하였습니다.');
+							alert('<spring:message code="msg.common.upload.failed" />');
 						}
 						
 						$('.ajax-file-upload-statusbar').fadeOut('slow');
@@ -1155,7 +1155,7 @@ var sampleFile =  ${ct:getAllValuesJson(ct:getConstDef('CD_SAMPLE_FILE'))};
 			var fileSeq = $('input[name=ossFileId]').val();
 			
 			if(sheetNum.length == 0){
-				alert('please select sheet');
+				alert('<spring:message code="msg.common.check.sheet" />');
 				
 				return;
 			}else{
@@ -1604,7 +1604,7 @@ var sampleFile =  ${ct:getAllValuesJson(ct:getConstDef('CD_SAMPLE_FILE'))};
 		},
 		CheckChar : function(){
 			if(event.keyCode == 64){//@ 특수문자 체크
-        		alertify.alert("\'@\' Special characters are not allowed!", function(){});
+        		alertify.alert('<spring:message code="msg.login.check.char" />', function(){});
         		event.returnValue = false;
         	}
 		},

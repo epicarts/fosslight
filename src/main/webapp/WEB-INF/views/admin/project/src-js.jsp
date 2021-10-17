@@ -589,7 +589,7 @@ var src_fn = {
 		});
 		
 		if(sheetNum.length == 0) {
-			alert('please select sheet');
+			alert('<spring:message code="msg.common.check.sheet" />');
 			
 			return;
 		} else {
