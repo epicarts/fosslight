@@ -1510,7 +1510,7 @@
 			var editorVal = CKEDITOR.instances.editor.getData();
 			
 			if(!editorVal || editorVal == "") {
-                alertify.alert("<spring:message code="msg.project.enter.comment" />", function(){});
+				alertify.alert("<spring:message code="msg.project.enter.comment" />", function(){});
 				return false;
 			}
 			
@@ -1568,7 +1568,7 @@
 			var editorVal = CKEDITOR.instances.editor.getData();
 
 			if(!editorVal || editorVal == "") {
-                alertify.alert("<spring:message code="msg.project.enter.comment" />", function(){});
+				alertify.alert("<spring:message code="msg.project.enter.comment" />", function(){});
 				return false;
 			}
 			

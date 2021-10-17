@@ -78,7 +78,7 @@ var com_evt = {
 					}				
 				}
 			}else {
-                alertify.alert('<spring:message code="msg.project.warn.project.status" />', function(){});
+				alertify.alert('<spring:message code="msg.project.warn.project.status" />', function(){});
 			}	
 		});
 		
@@ -612,7 +612,7 @@ var com_fn = {
 		var editorVal = CKEDITOR.instances.editor.getData();
 		
 		if(!editorVal || editorVal == "") {
-            alertify.alert("<spring:message code="msg.project.enter.comment" />", function(){});
+			alertify.alert("<spring:message code="msg.project.enter.comment" />", function(){});
 
 			return false;
 		}

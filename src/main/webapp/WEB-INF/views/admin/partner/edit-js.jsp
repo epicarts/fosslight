@@ -256,7 +256,7 @@ var sampleFile =  ${ct:getAllValuesJson(ct:getConstDef('CD_SAMPLE_FILE'))};
 								$('.ossUpload').append(' <span><input type="button" value="Delete" class="smallDelete" onclick="fn.deleteOssFile(this)" style="vertical-align:super;"/></span>');
 								$('.ossUpload').append('<input type="hidden" name="ossFileId" value="'+result[0][0].registSeq+'"/>');
 							} else {
-                                alertify.alert('<spring:message code="msg.common.upload.failed" />', function(){});
+								alertify.alert('<spring:message code="msg.common.upload.failed" />', function(){});
 							}
 							
 							$('.ajax-file-upload-statusbar').fadeOut('slow');
@@ -298,7 +298,7 @@ var sampleFile =  ${ct:getAllValuesJson(ct:getConstDef('CD_SAMPLE_FILE'))};
 								$("#documentsFile").hide();
 							}
 						} else {
-                            alertify.alert('<spring:message code="msg.common.upload.failed" />', function(){});
+							alertify.alert('<spring:message code="msg.common.upload.failed" />', function(){});
 						}
 						
 						$('.ajax-file-upload-statusbar').fadeOut('slow');
@@ -315,8 +315,8 @@ var sampleFile =  ${ct:getAllValuesJson(ct:getConstDef('CD_SAMPLE_FILE'))};
 
 				if(adId == "") {
 					$("#adId").focus();
-                    // return alertify.error('Please enter watcher AD ID', 0);
-                    return alertify.error('<spring:message code="enter.watcher.error" />', 0);
+					// return alertify.error('Please enter watcher AD ID', 0);
+					return alertify.error('<spring:message code="enter.watcher.error" />', 0);
 				}
 				
 				var _email = adId + "@" + domain;
@@ -324,8 +324,8 @@ var sampleFile =  ${ct:getAllValuesJson(ct:getConstDef('CD_SAMPLE_FILE'))};
 
 				if (!regEmail.test(_email)) {
 					$("#adId").focus();
-                    // return alertify.error('Invalid email address.', 0);
-                    return alertify.error('<spring:message code="invalid.email.error" />', 0);
+					// return alertify.error('Invalid email address.', 0);
+					return alertify.error('<spring:message code="invalid.email.error" />', 0);
 				}
 				
 				$.ajax({

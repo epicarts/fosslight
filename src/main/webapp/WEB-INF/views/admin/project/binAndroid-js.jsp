@@ -384,7 +384,7 @@ var binAndroid_fn = {
 		}
 		
 		// When loaded in another project, the notice file and the result file are replaced with the uploaded file when loading the project.
-        if(globalBinAndroidNoticeFileId != "") {
+		if(globalBinAndroidNoticeFileId != "") {
 			androidNoticeFileId = globalBinAndroidNoticeFileId;
 			androidResultFileId = globalBinAndroidResultFileId;
 			
@@ -1150,7 +1150,7 @@ var binAndroid_fn = {
         }, []).length;
 
         if(noticeCheckRow == 0){ //  "NOTICE Should be "ok" in case OSS is used" 인 대상이 0건 일 경우
-            alertify.alert("<spring:message code='msg.project.no.binary' />", function(){});
+			alertify.alert("<spring:message code='msg.project.no.binary' />", function(){});
 
 			return false;
         }

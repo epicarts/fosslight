@@ -1000,7 +1000,7 @@
 				var editorVal = CKEDITOR.instances.editor2.getData();
 				
 				if(!editorVal || editorVal == "") {
-                    alertify.alert("<spring:message code="msg.project.enter.comment" />", function(){});
+					alertify.alert("<spring:message code="msg.project.enter.comment" />", function(){});
 					
 					return false;
 				}
@@ -1058,7 +1058,7 @@
 			editorDialog : function(){
 				var editorVal = CKEDITOR.instances.editor2.getData();
 				if(!editorVal || editorVal == "") {
-                    alertify.alert("<spring:message code="msg.project.enter.comment" />", function(){});
+					alertify.alert("<spring:message code="msg.project.enter.comment" />", function(){});
 					
 					return false;
 				}

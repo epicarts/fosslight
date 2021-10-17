@@ -527,7 +527,7 @@ var fn_grid_com = {
 							fn_grid_com.deleteLocalDataAfterDelRow(target, selrow, flag);
 			    	   }
 					} else {
-                        alertify.error('<spring:message code="msg.common.cannot.delete" />', 0);
+						alertify.error('<spring:message code="msg.common.cannot.delete" />', 0);
 					}
 				} else {
 					target.jqGrid('collapseSubGridRow', selrow);
@@ -542,7 +542,7 @@ var fn_grid_com = {
 					target.jqGrid('delRowData', selrow);
 					fn_grid_com.deleteLocalDataAfterDelRow(target, selrow, flag);
 				} else {
-                    alertify.error('<spring:message code="msg.common.cannot.registered.delete" />', 0);
+					alertify.error('<spring:message code="msg.common.cannot.registered.delete" />', 0);
 				}
 			}
 		},
