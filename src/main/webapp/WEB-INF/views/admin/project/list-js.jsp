@@ -717,7 +717,7 @@
 			}
 
 			if(commentFlag && reason.split(" ").join("") == "") {
-                alertify.alert('<spring:message code="msg.project.confirm.comment" />', function(){});
+				alertify.alert('<spring:message code="msg.project.confirm.comment" />', function(){});
 				$("#reason").next(".retxt").show();
 				return false;
 			}

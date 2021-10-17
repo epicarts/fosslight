@@ -139,7 +139,7 @@
 					alertify.alert('<spring:message code="msg.project.confirm.comment" />', function(){});
 				}else{
 					if(distributionStatus == "PROC"){
-                        var comment = '<spring:message code="msg.project.distribution.loading" />';
+						var comment = '<spring:message code="msg.project.distribution.loading" />';
 						
 						alertify.error(comment, 0);
 
