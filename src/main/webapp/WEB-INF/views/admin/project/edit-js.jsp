@@ -1450,7 +1450,7 @@
 				if(event.keyCode == 64){//@ 특수문자 체크
             				alertify.alert('<spring:message code="msg.login.check.char" />', function(){});
             		
-            		event.returnValue = false;
+            				event.returnValue = false;
             	}
 			}
 		}
